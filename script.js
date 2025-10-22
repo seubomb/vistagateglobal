@@ -212,6 +212,14 @@ document.addEventListener('DOMContentLoaded', function() {
     handleContactForm();
 });
 
+// 回到顶部功能
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
 // 图片放大模态框功能
 function openModal(img) {
     const modal = document.getElementById('imageModal');
