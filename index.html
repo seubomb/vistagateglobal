@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Outdoor Living - Intelligent Garden Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo-1.jpg" alt="VISTA GATE GLOBAL" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#distributors" class="nav-cta">For Distributors</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Designing the Future of Smart Outdoor Living</h1>
+                <p>From intelligent lawn robots to ambient garden lighting — all engineered with precision.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Explore Products</button>
+                    <button class="btn-secondary">About Our Factory</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section id="products" class="product-categories">
+        <div class="container">
+            <h2 class="section-title">Our Product Lines</h2>
+            <div class="categories-grid">
+                <!-- Lawn & Garden -->
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="images/prod-1.jpg" alt="Lawn & Garden Products" class="product-image" onclick="openModal(this)">
+                    </div>
+                    <div class="category-content">
+                        <h3>Lawn & Garden</h3>
+                        <p>Intelligent lawn robots and automated irrigation systems</p>
+                        <div class="product-preview">
+                            <div class="product-item">Smart Mower Robot</div>
+                            <div class="product-item">Auto Irrigation System</div>
+                            <div class="product-item">Garden Sensor Network</div>
+                        </div>
+                        <button class="btn-outline">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Security & Cameras -->
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="images/prod-2.jpg" alt="Security & Cameras Products" class="product-image" onclick="openModal(this)">
+                    </div>
+                    <div class="category-content">
+                        <h3>Security & Cameras</h3>
+                        <p>Outdoor surveillance and smart doorbell systems</p>
+                        <div class="product-preview">
+                            <div class="product-item">Weatherproof Cameras</div>
+                            <div class="product-item">Smart Doorbell Pro</div>
+                            <div class="product-item">Motion Detection Lights</div>
+                        </div>
+                        <button class="btn-outline">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Kitchen & BBQ -->
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="images/prod-3.jpg" alt="Kitchen & BBQ Products" class="product-image" onclick="openModal(this)">
+                    </div>
+                    <div class="category-content">
+                        <h3>Kitchen & BBQ</h3>
+                        <p>Smart outdoor cooking and entertainment systems</p>
+                        <div class="product-preview">
+                            <div class="product-item">Smart BBQ Grill</div>
+                            <div class="product-item">Temperature Control</div>
+                            <div class="product-item">Outdoor Kitchen Hub</div>
+                        </div>
+                        <button class="btn-outline">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Lighting & Atmosphere -->
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="images/prod-4.jpg" alt="Lighting & Atmosphere Products" class="product-image" onclick="openModal(this)">
+                    </div>
+                    <div class="category-content">
+                        <h3>Lighting & Atmosphere</h3>
+                        <p>Ambient garden lighting and smart landscape systems</p>
+                        <div class="product-preview">
+                            <div class="product-item">Smart Garden Lights</div>
+                            <div class="product-item">Pathway Illumination</div>
+                            <div class="product-item">Mood Lighting Control</div>
+                        </div>
+                        <button class="btn-outline">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Strength -->
+    <section class="professional-strength">
+        <div class="container">
+            <div class="strength-content">
+                <div class="strength-text">
+                    <h2>We design and build our products</h2>
+                    <p>Our engineering team combines precision manufacturing with innovative design to create products that enhance your outdoor living experience.</p>
+                    
+                    <div class="strength-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Engineers in mechanical design</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">In-house assembly line</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">ISO9001</div>
+                            <div class="stat-label">Certified factory in Shenzhen</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="strength-visual">
+                    <div class="factory-showcase">
+                        <div class="showcase-item factory">
+                            <img src="images/fac-1.jpg" alt="Factory Production" class="factory-image">
+                        </div>
+                        <div class="showcase-item design">
+                            <img src="images/fac-2.jpg" alt="Design Process" class="factory-image">
+                        </div>
+                        <div class="showcase-item testing">
+                            <img src="images/fac-3.jpg" alt="Quality Testing" class="factory-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle Section -->
+    <section class="lifestyle">
+        <div class="container">
+            <h2 class="section-title">Bring joy and ease to your family evenings</h2>
+            <div class="lifestyle-grid">
+                <div class="lifestyle-item">
+                    <div class="lifestyle-image garden-evening">
+                        <img src="images/life-1.jpg" alt="Evening Garden Gatherings" class="lifestyle-img">
+                    </div>
+                    <h3>Evening Garden Gatherings</h3>
+                    <p>Create the perfect ambiance for family gatherings with intelligent lighting and automated systems.</p>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="lifestyle-image bbq-party">
+                        <img src="images/life-2.jpg" alt="Smart BBQ Entertainment" class="lifestyle-img">
+                    </div>
+                    <h3>Smart BBQ Entertainment</h3>
+                    <p>Enjoy effortless outdoor cooking with temperature-controlled grills and smart kitchen integration.</p>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="lifestyle-image night-lighting">
+                        <img src="images/life-3.jpg" alt="Ambient Night Lighting" class="lifestyle-img">
+                    </div>
+                    <h3>Ambient Night Lighting</h3>
+                    <p>Transform your outdoor space into a magical evening retreat with intelligent lighting systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Contact -->
+    <section id="about" class="about-contact">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About SmartOutdoor</h2>
+                    <p>We are a technology-driven company specializing in smart outdoor living solutions. Our mission is to enhance your outdoor experience through intelligent design and precision engineering.</p>
+                    <p>Based in Shenzhen, China, we combine cutting-edge technology with sustainable manufacturing practices to deliver products that exceed expectations.</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <strong>Email:</strong> info@vistagateglobal.com
+                        </div>
+                        <div class="contact-item">
+                            <strong>WhatsApp:</strong> +852 61186885
+                        </div>
+                        <div class="contact-item">
+                            <strong>Telegram:</strong> @Vistagateglobal
+                        </div>
+                        <div class="contact-item">
+                            <strong>WeChat:</strong> Vistagateglobal
+                        </div>
+                    </div>
+                    <div class="distributor-link">
+                        <a href="#distributors" class="btn-primary">For Distributors</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Distributors Section -->
+    <section id="distributors" class="distributors">
+        <div class="container">
+            <h2>Partner with Us</h2>
+            <p>Join our network of distributors and bring smart outdoor living to your market.</p>
+            <div class="distributor-benefits">
+                <div class="benefit-item">
+                    <h3>Competitive Pricing</h3>
+                    <p>Direct factory pricing with volume discounts</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Technical Support</h3>
+                    <p>Comprehensive training and ongoing support</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Marketing Materials</h3>
+                    <p>Professional marketing assets and product catalogs</p>
+                </div>
+            </div>
+            <button class="btn-primary">Contact Sales Team</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo-1.jpg" alt="VISTA GATE GLOBAL" class="footer-logo">
+                    <p>Intelligent Garden Home</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Products</h4>
+                        <ul>
+                            <li><a href="#">Lawn & Garden</a></li>
+                            <li><a href="#">Security & Cameras</a></li>
+                            <li><a href="#">Kitchen & BBQ</a></li>
+                            <li><a href="#">Lighting & Atmosphere</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Factory</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">For Distributors</a></li>
+                            <li><a href="#">Technical Support</a></li>
+                            <li><a href="#">Warranty</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SmartOutdoor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 图片放大模态框 -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
