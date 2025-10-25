@@ -22,8 +22,23 @@
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#distributors" class="nav-cta">For Distributors</a></li>
             </ul>
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-menu">
+            <li><a href="#products" onclick="closeMobileMenu()">Products</a></li>
+            <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+            <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+            <li><a href="#distributors" onclick="closeMobileMenu()" class="mobile-nav-cta">For Distributors</a></li>
+        </ul>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -48,7 +63,7 @@
             <h2 class="section-title">Our Product Lines</h2>
             <div class="categories-grid">
                 <!-- Lawn & Garden -->
-                <div class="category-card">
+                <div class="category-card" id="lawn-garden" onclick="scrollToCategory('lawn-garden')">
                     <div class="category-image">
                         <img src="images/prod-1.jpg" alt="Lawn & Garden Products" class="product-image" onclick="openModal(this)">
                     </div>
@@ -65,7 +80,7 @@
                 </div>
 
                 <!-- Security & Cameras -->
-                <div class="category-card">
+                <div class="category-card" id="security-cameras" onclick="scrollToCategory('security-cameras')">
                     <div class="category-image">
                         <img src="images/prod-2.jpg" alt="Security & Cameras Products" class="product-image" onclick="openModal(this)">
                     </div>
@@ -82,7 +97,7 @@
                 </div>
 
                 <!-- Kitchen & BBQ -->
-                <div class="category-card">
+                <div class="category-card" id="kitchen-bbq" onclick="scrollToCategory('kitchen-bbq')">
                     <div class="category-image">
                         <img src="images/prod-3.jpg" alt="Kitchen & BBQ Products" class="product-image" onclick="openModal(this)">
                     </div>
@@ -99,7 +114,7 @@
                 </div>
 
                 <!-- Lighting & Atmosphere -->
-                <div class="category-card">
+                <div class="category-card" id="lighting-atmosphere" onclick="scrollToCategory('lighting-atmosphere')">
                     <div class="category-image">
                         <img src="images/prod-4.jpg" alt="Lighting & Atmosphere Products" class="product-image" onclick="openModal(this)">
                     </div>
@@ -206,7 +221,7 @@
                     <p>We are a technology-driven company specializing in smart outdoor living solutions. Our mission is to enhance your outdoor experience through intelligent design and precision engineering.</p>
                     <p>Based in Shenzhen, China, we combine cutting-edge technology with sustainable manufacturing practices to deliver products that exceed expectations.</p>
                 </div>
-                <div class="contact-info">
+                <div class="contact-info" id="contact">
                     <h3>Get in Touch</h3>
                     <div class="contact-methods">
                         <div class="contact-item">
@@ -271,17 +286,17 @@
                     <div class="footer-column">
                         <h4>Products</h4>
                         <ul>
-                            <li><a href="#">Lawn & Garden</a></li>
-                            <li><a href="#">Security & Cameras</a></li>
-                            <li><a href="#">Kitchen & BBQ</a></li>
-                            <li><a href="#">Lighting & Atmosphere</a></li>
+                            <li><a href="#lawn-garden">Lawn & Garden</a></li>
+                            <li><a href="#security-cameras">Security & Cameras</a></li>
+                            <li><a href="#kitchen-bbq">Kitchen & BBQ</a></li>
+                            <li><a href="#lighting-atmosphere">Lighting & Atmosphere</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
                         <h4>Company</h4>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Our Factory</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#professional-strength">Our Factory</a></li>
                             <li><a href="#">Careers</a></li>
                             <li><a href="#">News</a></li>
                         </ul>
@@ -289,16 +304,16 @@
                     <div class="footer-column">
                         <h4>Support</h4>
                         <ul>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">For Distributors</a></li>
-                            <li><a href="#">Technical Support</a></li>
-                            <li><a href="#">Warranty</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#distributors">For Distributors</a></li>
+                            <li><a href="#distributors">Technical Support</a></li>
+                            <li><a href="#distributors">Warranty</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 VISTA GATE GLOBAL. All rights reserved.</p>
+                <p>&copy; 2025 VISTA GATE GLOBAL. All rights reserved.</p>
             </div>
         </div>
     </footer>

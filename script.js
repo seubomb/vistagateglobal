@@ -123,32 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 
-    // Mobile menu toggle (if needed in future)
-    function createMobileMenu() {
-        const nav = document.querySelector('.nav-container');
-        const mobileMenuButton = document.createElement('button');
-        mobileMenuButton.innerHTML = '☰';
-        mobileMenuButton.className = 'mobile-menu-toggle';
-        mobileMenuButton.style.display = 'none';
-        
-        nav.appendChild(mobileMenuButton);
-        
-        // Show/hide mobile menu button based on screen size
-        function toggleMobileMenu() {
-            if (window.innerWidth <= 768) {
-                mobileMenuButton.style.display = 'block';
-                document.querySelector('.nav-menu').style.display = 'none';
-            } else {
-                mobileMenuButton.style.display = 'none';
-                document.querySelector('.nav-menu').style.display = 'flex';
-            }
-        }
-        
-        window.addEventListener('resize', toggleMobileMenu);
-        toggleMobileMenu();
-    }
-    
-    createMobileMenu();
+    // Mobile menu functionality is handled by HTML and CSS
 
     // Parallax effect for hero section
     window.addEventListener('scroll', function() {
@@ -219,6 +194,66 @@ function scrollToTop() {
         behavior: 'smooth'
     });
 }
+
+// 跳转到产品分类
+function scrollToCategory(categoryId) {
+    const element = document.getElementById(categoryId);
+    if (element) {
+        const offsetTop = element.offsetTop - 80; // 考虑导航栏高度
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+        });
+    }
+}
+
+// 移动端菜单功能
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    
+    if (!mobileMenu || !menuToggle) {
+        return;
+    }
+    
+    if (mobileMenu.classList.contains('active')) {
+        closeMobileMenu();
+    } else {
+        openMobileMenu();
+    }
+}
+
+function openMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    
+    mobileMenu.classList.add('active');
+    menuToggle.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    
+    mobileMenu.classList.remove('active');
+    menuToggle.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+// 点击背景关闭菜单
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    if (mobileMenu) {
+        mobileMenu.addEventListener('click', function(e) {
+            // 如果点击的是菜单背景（不是菜单项），则关闭菜单
+            if (e.target === mobileMenu) {
+                closeMobileMenu();
+            }
+        });
+    }
+});
 
 // 图片放大模态框功能
 function openModal(img) {
